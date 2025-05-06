@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <title>Conviertefy</title>
 </head>
@@ -25,29 +26,28 @@
     </header>
 <body>
 
-            <div class="form">
-                <h3>Contactanos</h3>
-                <form id="form" action="/submit" method="POST">
-                    <p><label for="name">nombre: </label><input type="text" id="name" name="name" placeholder="Nombre" required></p> 
-                    <p><label for="lastname">apellido: </label><input type="text" id="lastname" name="lastname" placeholder="apellido (opcional)"></label></p>
-                    <p><label for="email">correo: </label><input type="email" id="email" name="email" placeholder="Email" required></label></p>
-                    <p><label for="tel">telefono: </label><input type="number" id="tel" name="tel" placeholder="Numero" required></label></p>
-                    <p><label for="mensaje">mensaje: </label><input type="text" id="text" name="text" placeholder="Mensaje" required></label></p>
-                    <p><label for="web">web: </label><input type="url" id="url" name="url" placeholder="tu web (opcional)"></label></p>
+    <div class="form">
+        <h3>Contactanos</h3>
+        <form id="form" action="/submit" method="GET">
+            <p><label for="name">nombre: </label><input type="text" id="name" name="name" placeholder="Nombre" required></p> 
+            <p><label for="lastname">apellido: </label><input type="text" id="lastname" name="lastname" placeholder="apellido"></label></p>
+            <p><label for="email">correo: </label><input type="email" id="email" name="email" placeholder="Email" required></label></p>
+            <p><label for="tel">telefono: </label><input type="number" id="tel" name="tel" placeholder="Numero" required></label></p>
+            <p><label for="mensaje">mensaje: </label><input type="text" id="text" name="text" placeholder="Mensaje" required></label></p>
 
-                            <h4>Genero?</h4>
-                            <p><label> <input type="radio" name="option" required value="macho"> macho </label></p>
-                            <p><label> <input type="radio" name="option" required value="hembra"> hembra </label></p>
-                            <p><label> <input type="radio" name="option" required value="ninguno"> ninguno </label></p>
+                    <h4>Genero?</h4>
+                    <p><label> <input type="radio" name="option" required value="macho"> macho </label></p>
+                    <p><label> <input type="radio" name="option" required value="hembra"> hembra </label></p>
+                    <p><label> <input type="radio" name="option" required value="ninguno"> ninguno </label></p>
 
-                        <label>
-                            <input type="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
-                        </label>
-                            
-                    <button type="submit" value="submit">Enviar</button>
-                </form>
-            </div>
-            
+                <label>
+                    <input type="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
+                </label>
+                    
+            <button type="submit" value="submit">Enviar</button>
+        </form>
+    </div>
+    
     </div>
         <footer>
             <div class="footer1">
