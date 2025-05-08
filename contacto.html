@@ -8,15 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <title>Conviertefy</title>
+    <meta name="description" description=" conviertefy agencia de diseño web | contacto">
+    <meta name="description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación ">
+    <meta property="og:title" content="Expertos en el diseño web | Conviertefy">
+    <meta property="og:url" content="https://conviertefy.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación.">
+    <title>conviertefy | contacto</title>
 </head>
+<div id="clock" style="background-color:#215bee; color: white; font-weight: 600; padding: 6px 0 6px 0;"></div>
     <header>
             <div class="logo">
-                <a href="index.html"><img src="assets/Logo.png"></a>
+                <a href="index.html"><img src="assets/Logo.png" alt="el logo de la empresa | conviertefy"></a>
             <div>
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="nosotros.html">nosotros</a></li>
@@ -41,10 +49,10 @@
                     <p><label> <input type="radio" name="option" required value="ninguno"> ninguno </label></p>
 
                 <label>
-                    <input type="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
+                    <input type="checkbox" id="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
                 </label>
                     
-            <button type="submit" value="submit">Enviar</button>
+            <button type="submit" id="sendBtn" value="submit">Enviar</button>
         </form>
     </div>
     
@@ -62,7 +70,25 @@
         </div>
 
 
-        <img src="assets/Logo.png">
+        <img src="assets/Logo.png" alt="el logo de la empresa | conviertefy">
     </footer>
+
+<script>
+window.onload = onPageLoad();
+function onPageLoad() {
+document.getElementById("checkbox").checked = true;
+}
+
+var checker = document.getElementById('checkbox');
+var sendbtn = document.getElementById('sendBtn');
+
+checker.onchange = function(){
+if(this.checked){
+    sendbtn.disabled = false;
+} else {
+    sendbtn.disabled = true;
+}
+}
+</script>
 </body>
 </html>

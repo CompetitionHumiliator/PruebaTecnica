@@ -8,15 +8,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <title>Conviertefy</title>
+    <meta name="description" description="agencia de diseño web">
+    <meta name="description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación ">
+    <meta property="og:title" content="Expertos en el diseño web | Conviertefy">
+    <meta property="og:url" content="https://conviertefy.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación.">
+    <title>Conviertefy - agencia de diseño web </title>
 </head>
+
+<div id="clock" style="background-color:#215bee; color: white; font-weight: 600; padding: 6px 0 6px 0;"></div>
     <header>
             <div class="logo">
-                <a href="index.html"><img src="assets/Logo.png"></a>
+                <a href="index.html"><img src="assets/Logo.png" alt="el logo de la empresa | conviertefy"></a>
             <div>
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="nosotros.html">nosotros</a></li>
@@ -34,7 +43,7 @@
                     <p>Conviertefy ayuda a las marcas a escalar de forma rentable con la optimización de la tasa de conversión.</p>
                 </div>
                 <div class="button">
-                    <a href="index.html"><button>Reserva ahora tu llamada gratuita ahora</button></a>
+                    <a href="contacto.html"><button>Reserva ahora tu llamada gratuita ahora</button></a>
                 </div>
                 <p style="font-style: italic; font-weight: bold; font-size: 14px;">calificado 4.9/5 por cientos de clientes verificados<br>⭐⭐⭐⭐⭐</p>
 
@@ -44,20 +53,20 @@
             <div class="testimonios">
                 <div class="testi1">
                     <p>Finalmente encontre a una agencia que me entiende y hacer la pagina super optimizada</p>
-                    <img src="assets/testi.jpeg">
+                    <img src="assets/testi.jpeg" alt="testimonio del cliente 721">
                     <p style="font-weight: bold; font-style: italic;">Ane, Remote Entrepreneur</p>
                 </div >      
 
                 <div class="testi2">
                     <p>Finalmente encontre a una agencia que me entiende y hacer la pagina super optimizada</p>
-                    <img src="assets/testi2.jpeg">
+                    <img src="assets/testi2.jpeg" alt="testimonio del cliente 912">
                     <p style="font-weight: bold; font-style: italic;">Maria, CEO</p>
                 </div>
 
 
                 <div class="testi3">
                     <p>Finalmente encontre a una agencia que me entiende y hacer la pagina super optimizada</p>
-                    <img src="assets/testi3.jpeg">
+                    <img src="assets/testi3.jpeg" alt="testimonio del cliente 917">
                     <p style="font-weight: bold; font-style: italic;">Dalia, Sales Representative</p>
                 </div>
 
@@ -132,13 +141,16 @@
                             <p><label> <input type="radio" name="option" required value="ninguno"> ninguno </label></p>
 
                         <label>
-                            <input type="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
+                            <input type="checkbox" id="checkbox" name="policy" required> <a href="https://policies.google.com/privacy?hl=es">Estoy de acuerdo con los terminos y condiciones</a>
                         </label>
                             
-                    <button type="submit" value="submit">Enviar</button>
+                    <button type="submit" id="sendBtn" value="submit">Enviar</button>
                 </form>
             </div>
-            
+            <div class="button">
+                <a href="login.html"><button style="margin-top: 60px;"> tienes cuenta? inicia sesion ya</button></a>
+            </div>
+
     </div>
         <footer>
             <div class="footer1">
@@ -153,7 +165,26 @@
         </div>
 
 
-        <img src="assets/Logo.png">
+        <img src="assets/Logo.png" alt="el logo de la empresa | conviertefy">
     </footer>
+
+<script>
+window.onload = onPageLoad();
+function onPageLoad() {
+document.getElementById("checkbox").checked = true;
+}
+
+var checker = document.getElementById('checkbox');
+var sendbtn = document.getElementById('sendBtn');
+
+checker.onchange = function(){
+if(this.checked){
+    sendbtn.disabled = false;
+} else {
+    sendbtn.disabled = true;
+}
+}
+</script>
+
 </body>
 </html>

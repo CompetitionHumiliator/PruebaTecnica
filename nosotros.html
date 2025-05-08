@@ -8,15 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <title>Conviertefy</title>
+    <meta name="description" description="conviertefy agencia de diseño web | sobre nosotros">
+    <meta name="description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación ">
+    <meta property="og:title" content="Expertos en el diseño web | Conviertefy">
+    <meta property="og:url" content="https://conviertefy.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Conviertefy es una agencia de diseño web enfocada en aumentar las tasas de conversión para sus clientes. Estrategia de diseño de conversiones, auditorías, técnicas e implementación.">
+    <title>conviertefy | nosotros</title>
 </head>
+<div id="clock" style="background-color:#215bee; color: white; font-weight: 600; padding: 6px 0 6px 0;"></div>
     <header>
             <div class="logo">
-                <a href="index.html"><img src="assets/Logo.png"></a>
+                <a href="index.html"><img src="assets/Logo.png" alt="el logo de la empresa | conviertefy"></a>
             <div>
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li><a href="index.html">home</a></li>
                         <li><a href="nosotros.html">nosotros</a></li>
@@ -31,23 +39,32 @@
         </h1>
     
     <h2>Conocer al equipo</h2>
-    <img src="assets/equipo.png" style="width: 500px; height: 0 auto; display: block; margin: 0 auto; ">
+    <img id="imagedd" src="assets/equipo.png" alt="la foto del equipo | conviertefy">
         <footer>
             <div class="footer1">
                 <p>empresa</p>
                 <ul class="ul1">
                     <a href="nosotros.html"><li>nosotros</li>
                     <a href="contacto.html"><li>contactanos</li>
-                </ul>
-            </div>
-                <ul class="ul2">
+    
                     <a href="https://policies.google.com/privacy?hl=es"><li>politica de privacidad</li>
                     <a href="map.html"><li>donde estamos</li>
                 </ul>
             </div>
-
-
-        <img src="assets/Logo.png">
+        <img src="assets/Logo.png" alt="el logo de la empresa | conviertefy">
     </footer>
+    <script>
+
+var image = document.getElementById("imagedd");
+
+image.addEventListener('mouseover', function(){
+  image.src = "assets/black.png"
+})
+
+image.addEventListener('mouseout', function(){
+    image.src = "assets/equipo.png"
+})
+
+    </script>
 </body>
 </html>

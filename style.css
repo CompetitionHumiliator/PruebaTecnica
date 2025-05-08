@@ -12,17 +12,32 @@ body {
     padding: 0 50px 0 50px;
 }
 
+#clock {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    margin-top: -35px;
+}
+
+header {
+    position: relative;
+    margin-top: 35px;
+
+}
+
 header {
     padding: 20px 0 20px 0;
     position: relative;
     background-color:#e4edff;
 }
 
-header, ul, li {
+header, #nav ul, li {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 15px;
 }
+
 
 
 .logo, img {
@@ -85,6 +100,20 @@ h4 {
     border: 1px solid #000000;
     border-radius: 3px;
     cursor:text;
+}
+
+
+.submit {
+    font-size: 15px;
+    font-weight: bold;
+    color: #c4d5ff;
+    background-color: #215bee;
+    padding: 7px 10px 7px 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor:pointer;
+    margin-left: 100px;
+    width: 25%;
 }
 
 .button1 h2 {
@@ -283,9 +312,38 @@ footer img {
     margin: 0 auto;
 }
 
+#imagedd {
+    width: 500px; 
+    height: 600px; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    border: 2px solid black; 
+    box-shadow: 8px 7px 5px #456f8b;
+}
 
+.imagemine img {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+}
+
+.imagemine {
+    margin-top: 30px;
+}
+
+#login1 > ul > li {
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
 
 @media (min-width: 500px) and (max-width: 640px) {
+
+
+    
     nav {
         position: absolute;
         width: 100%;
@@ -296,7 +354,7 @@ footer img {
     
     }
 
-    header, ul, li {
+    header , ul, li {
         list-style: none;
         display: flex;
         gap: 10px;
@@ -478,7 +536,16 @@ footer img {
         text-align: center;
     }
 
+    #imagedd {
+        width: 400px; 
+        height: 500px; 
+        display: block; 
+        margin: 0 auto; 
+        border-radius: 10px; 
+        border: 2px solid black; 
+        box-shadow: 8px 7px 5px #456f8b;
+    }
     
-    
+
     
 }
